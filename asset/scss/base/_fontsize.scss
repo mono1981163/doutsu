@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import "../settings/config";
+@import "../mixin/mq";
+
+@for $i from 10 through 50 {
+	.f {
+		&-#{$i} {font-size: #{$i}px;}
+	}
+}
+
+@include mq_pc {
+	@for $i from 10 through 50 {
+    .f {
+      &-pc-#{$i} {font-size: #{$i}px;}
+    }
+  }
+}
+
+@include mq_sp {
+	@for $i from 10 through 50 {
+    .f {
+      &-sp-#{$i} {font-size: #{$i}px;}
+    }
+  }
+}

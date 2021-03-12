@@ -18,3 +18,12 @@ function add_files() {
 	wp_script('script', '/asset/js/script.js');
 }
 add_action('wp_enqueue_scripts', 'add_files', 1);
+
+function add_slug_body_class( $classes ) {
+	global $post;
+	if ( isset( $post ) ) {
+		$classes[] = $post->post_type . '-' . $post->post_name;
+	}
+	return $classes;
+}
+add_filter( 'body_class', 'add_slug_body_class' );
