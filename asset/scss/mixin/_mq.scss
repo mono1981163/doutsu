@@ -1,0 +1,16 @@
+@charset "UTF-8";
+@import "../settings/config";
+
+// メディアクエリ
+
+@mixin mq_pc {
+	@media (min-width: ($breakPoint)) {
+		@content;
+	}
+}
+
+@mixin mq_sp {
+	@media (max-width: (#{$breakPoint - 1})) {
+		@content;
+	}
+}

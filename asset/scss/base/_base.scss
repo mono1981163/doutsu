@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import "../settings/config";
+@import "../mixin/mq";
+
+// Responsive Style
+._pc {
+  @include mq_pc {
+    display: block;
+  }
+  @include mq_sp {
+    display: none;
+  }
+}
+._sp {
+  @include mq_pc {
+    display: none;
+  }
+  @include mq_sp {
+    display: block;
+  }
+}
