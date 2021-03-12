@@ -2,6 +2,7 @@
 
 // ブレイクポイント
 $breakPoint: 768px;
+$breakPoint01: 1100px;
 
 // font-weight
 $Light: 300;
@@ -9,3 +10,17 @@ $Regular: 400;
 $Medium: 500;
 $semiBold: 600;
 $Bold: 700;
+
+// color
+$transparent: transparent;
+$white: #fff;
+$black: #000;
+
+// font
+$YuGothic: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+$YuGothicBold: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+
+$YuMinchoLight: Yu Mincho Light, "游明朝体", Yu Mincho;
+$YuMinchoRegular: Yu Mincho Regular, "游明朝体", Yu Mincho;
+$YuMinchoMedium: Yu Mincho Medium, "游明朝体", Yu Mincho;
+$YuMinchoDemibold: Yu Mincho Demibold, "游明朝体", Yu Mincho;

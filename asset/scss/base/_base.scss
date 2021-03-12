@@ -8,14 +8,45 @@
     display: block;
   }
   @include mq_sp {
-    display: none;
+    display: none !important;
   }
 }
 ._sp {
   @include mq_pc {
-    display: none;
+    display: none !important;
   }
   @include mq_sp {
     display: block;
   }
+}
+._pc01 {
+  @include mq_pc01 {
+    display: block;
+  }
+  @include mq_sp01 {
+    display: none !important;
+  }
+}
+._sp01 {
+  @include mq_pc01 {
+    display: none !important;
+  }
+  @include mq_sp01 {
+    display: block;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  color: unset;
+  text-decoration: none;
 }

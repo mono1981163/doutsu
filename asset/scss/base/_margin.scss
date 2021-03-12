@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@import "../settings/config";
+@import "../mixin/mq";
+
+@for $i from 0 through 2 {
+	.m {
+		&-#{$i * 10 - 5} {margin: #{$i * 10 - 5}px !important;}
+		&t-#{$i * 10 - 5} {margin-top: #{$i * 10 - 5}px !important;}
+		&b-#{$i * 10 - 5} {margin-bottom: #{$i * 10 - 5}px !important;}
+		&l-#{$i * 10 - 5} {margin-left: #{$i * 10 - 5}px !important;}
+		&r-#{$i * 10 - 5} {margin-right: #{$i * 10 - 5}px !important;}
+	}
+}
+
+@for $i from -5 through 10 {
+	.m {
+		&-#{$i * 10} {margin: #{$i * 10}px !important;}
+		&t-#{$i * 10} {margin-top: #{$i * 10}px !important;}
+		&b-#{$i * 10} {margin-bottom: #{$i * 10}px !important;}
+		&l-#{$i * 10} {margin-left: #{$i * 10}px !important;}
+		&r-#{$i * 10} {margin-right: #{$i * 10}px !important;}
+	}
+	.p {
+		&-#{$i * 10} {padding: #{$i * 10}px !important;}
+		&t-#{$i * 10} {padding-top: #{$i * 10}px !important;}
+		&b-#{$i * 10} {padding-bottom: #{$i * 10}px !important;}
+		&l-#{$i * 10} {padding-left: #{$i * 10}px !important;}
+		&r-#{$i * 10} {padding-right: #{$i * 10}px !important;}
+	}
+}
+
+
+
+@include mq_pc {
+	@for $i from 0 through 2 {
+		.m {
+			&-pc-#{$i * 10 - 5} {margin: #{$i * 10 - 5}px !important;}
+			&t-pc-#{$i * 10 - 5} {margin-top: #{$i * 10 - 5}px !important;}
+			&b-pc-#{$i * 10 - 5} {margin-bottom: #{$i * 10 - 5}px !important;}
+			&l-pc-#{$i * 10 - 5} {margin-left: #{$i * 10 - 5}px !important;}
+			&r-pc-#{$i * 10 - 5} {margin-right: #{$i * 10 - 5}px !important;}
+		}
+	}
+	@for $i from -5 through 12 {
+		.m {
+			&-pc-#{$i * 10} {margin: #{$i * 10}px !important;}
+			&t-pc-#{$i * 10} {margin-top: #{$i * 10}px !important;}
+			&b-pc-#{$i * 10} {margin-bottom: #{$i * 10}px !important;}
+			&l-pc-#{$i * 10} {margin-left: #{$i * 10}px !important;}
+			&r-pc-#{$i * 10} {margin-right: #{$i * 10}px !important;}
+		}
+		.p {
+			&-pc-#{$i * 10} {padding: #{$i * 10}px !important;}
+			&t-pc-#{$i * 10} {padding-top: #{$i * 10}px !important;}
+			&b-pc-#{$i * 10} {padding-bottom: #{$i * 10}px !important;}
+			&l-pc-#{$i * 10} {padding-left: #{$i * 10}px !important;}
+			&r-pc-#{$i * 10} {padding-right: #{$i * 10}px !important;}
+		}
+	}
+}
+
+@include mq_sp {
+	@for $i from 0 through 2 {
+		.m {
+			&-sp-#{$i * 10 - 5} {margin: #{$i * 10 - 5}px !important;}
+			&t-sp-#{$i * 10 - 5} {margin-top: #{$i * 10 - 5}px !important;}
+			&b-sp-#{$i * 10 - 5} {margin-bottom: #{$i * 10 - 5}px !important;}
+			&l-sp-#{$i * 10 - 5} {margin-left: #{$i * 10 - 5}px !important;}
+			&r-sp-#{$i * 10 - 5} {margin-right: #{$i * 10 - 5}px !important;}
+		}
+	}
+	@for $i from -5 through 10 {
+		.m {
+			&-sp-#{$i * 10} {margin: #{$i * 10}px !important;}
+			&t-sp-#{$i * 10} {margin-top: #{$i * 10}px !important;}
+			&b-sp-#{$i * 10} {margin-bottom: #{$i * 10}px !important;}
+			&l-sp-#{$i * 10} {margin-left: #{$i * 10}px !important;}
+			&r-sp-#{$i * 10} {margin-right: #{$i * 10}px !important;}
+		}
+		.p {
+			&-sp-#{$i * 10} {padding: #{$i * 10}px !important;}
+			&t-sp-#{$i * 10} {padding-top: #{$i * 10}px !important;}
+			&b-sp-#{$i * 10} {padding-bottom: #{$i * 10}px !important;}
+			&l-sp-#{$i * 10} {padding-left: #{$i * 10}px !important;}
+			&r-sp-#{$i * 10} {padding-right: #{$i * 10}px !important;}
+		}
+	}
+}

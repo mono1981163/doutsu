@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import "../settings/config";
+
+@mixin YuMincho($type: regular) {
+  @if ($type == 'light') {
+    font-family: $YuMinchoLight;
+    font-weight: $Light;
+  }
+  @if ($type == 'regular') {
+    font-family: $YuMinchoRegular;
+    font-weight: $Regular;
+  }
+  @if ($type == 'medium') {
+    font-family: $YuMinchoMedium;
+    font-weight: $Medium;
+  }
+  @if ($type == 'demibold') {
+    font-family: $YuMinchoDemibold;
+    font-weight: $Bold;
+  }
+}

@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@import "../settings/config";
+
+@mixin YuGothic($type) {
+  @if ($type == 'light') {
+    font-family: $YuGothic;
+    font-weight: $Light;
+  }
+  @if ($type == 'regular') {
+    font-family: $YuGothic;
+    font-weight: $Regular;
+  }
+  @if ($type == 'medium') {
+    font-family: $YuGothic;
+    font-weight: $Medium;
+  }
+  @if ($type == 'bold') {
+    font-family: $YuGothicBold;
+    font-weight: $Bold;
+  }
+}
