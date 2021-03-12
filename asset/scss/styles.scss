@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+// Load config file
+@import './settings/config';
+
+// Load base style
+@import './base/reset';
+
+@import './base/base';
+
+@import './base/margin';
+
+// Load UI components
+@import './components/header';
+
+@import './components/footer';
+
+// Load PC style
+@import './page/top/pc';
+
+// Load SP style
+@include mq_sp {
+  @import './page/top/sp';
+}

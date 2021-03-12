@@ -1,1 +1,1 @@
-# doutsu
+# Wordpress Theme - doutsu
