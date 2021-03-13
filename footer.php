@@ -1,4 +1,6 @@
 </main>
+<a href="#"><img src="<?php echo get_template_directory_uri(); ?>/asset/img/common/pagebutton.jpg" alt="" class="_pc" id="toMenu"></a>
+<a href="#sec00"><img src="<?php echo get_template_directory_uri(); ?>/asset/img/common/pagetop_button.png" alt="" class="_pc" id="toTop"></a>
 <footer class="footer">
   <div class="footer-top">
     <div class="footer-left">

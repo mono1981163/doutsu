@@ -13,15 +13,9 @@
   <header class="header _pc01 header-white">
     <nav>
       <ul>
-        <li>
-          <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/asset/img/common/nav_01_w.png" alt=""></a>
-        </li>
-        <li>
-          <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/asset/img/common/nav_02_w.png" alt=""></a>
-        </li>
-        <li>
-          <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/asset/img/common/nav_03_w.png" alt=""></a>
-        </li>
+        <li><a href="#" id="header-white-item01"></a></li>
+        <li><a href="#" id="header-white-item02"></a></li>
+        <li><a href="#" id="header-white-item03"></a></li>
       </ul>
     </nav>
     <img src="<?php echo get_template_directory_uri(); ?>/asset/img/common/hd_logo.png" alt="" class="header-logo">
@@ -35,18 +29,9 @@
     <img src="<?php echo get_template_directory_uri(); ?>/asset/img/common/menu_logo.png" alt="" class="header-logo">
     <nav>
       <ul>
-        <li>
-          <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/asset/img/common/menu_nav_01_b.png"
-              alt=""></a>
-        </li>
-        <li>
-          <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/asset/img/common/menu_nav_02_b.png"
-              alt=""></a>
-        </li>
-        <li>
-          <a href="#"><img src="<?php echo get_template_directory_uri(); ?>/asset/img/common/menu_nav_03_b.png"
-              alt=""></a>
-        </li>
+        <li><a href="#" id="header-black-item01"></a></li>
+        <li><a href="#" id="header-black-item02"></a></li>
+        <li><a href="#" id="header-black-item03"></a></li>
       </ul>
     </nav>
     <div class="header-contact">
