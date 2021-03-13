@@ -1,0 +1,142 @@
+@import "../mixin/mq";
+@import "../mixin/flex";
+@import "../mixin/YuMincho";
+@import "../settings/config";
+
+.footer {
+  background-color: $black;
+  color: $white;
+  @include YuMincho(medium);
+
+  &-top {
+    @include flex(center, left);
+    padding: 80px 0 180px;
+
+    .footer-left {
+      width: 430px;
+
+      .footer-logo {
+        padding: 40px 0 28px;
+        img {
+          width: 330px;
+        }
+      }
+
+      .footer-contact {
+        &01 {
+          // line-height: 30px;
+        }
+
+        &02 {
+          @include YuMincho(demibold);
+          line-height: 36px;
+        }
+
+        &03 {
+          line-height: 1.3em;
+          margin-top: -5px;
+        }
+
+        &04 {
+          line-height: 1.3em;
+        }
+      }
+    }
+
+    .footer-right {
+      font-size: 15px;
+
+      .footer-item {
+        line-height: 48px;
+        @include flex(left, left);
+
+        &Left {
+          width: 115px;
+        }
+      }
+    }
+
+  }
+
+  &-bottom {
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid $white;
+  }
+
+  // Responsive Style
+  @include mq_sp01 {
+    &-top {
+      padding-bottom: 80px;
+
+      .footer-left {
+        @include flex(center, left);
+        width: 100%;
+        padding-bottom: 40px;
+
+        .footer-logo {
+          padding: 0 40px 0 0;
+          img {
+            width: 225px;
+          }
+        }
+      }
+    }
+  }
+
+  @include mq_sp {
+    &-top {
+      display: block;
+      padding: 37px 0 28px;
+  
+      .footer-left {
+        width: unset;
+        display: block;
+        padding-bottom: 20px;
+        .footer-logo {
+          padding: 0;
+          img {
+            margin: auto;
+          }
+        }
+  
+        .footer-contact {
+          text-align: center;
+          @include YuMincho(medium);
+          font-size: 14px;
+          &01 {
+            padding-top: 18px;
+            img {
+              width: 300px;
+            }
+          }
+          &02 {
+            margin-top: -10px;
+            line-height: 2.8em;
+          }
+        }
+      }
+      .footer-right {
+        font-size: 14px;
+        padding: 0 10px;
+        max-width: 350px;
+        margin: auto;
+        .footer-item {
+          line-height: 1.8;
+          display: block;
+  
+          &Left {
+            margin-top: 10px;
+            width: unset;
+          }
+        }
+      }
+  
+    }
+  
+    &-bottom {
+      padding: 30px 0 50px;
+      font-size: 12px;
+    }
+  }
+}

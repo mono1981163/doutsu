@@ -181,8 +181,8 @@
       position: fixed;
       top: 0;
       bottom: 0;
-      width: 100vw;
       right: 100vw;
+      left: -100vw;
       background-color: $white;
       color: $black;
       z-index: -1;
@@ -192,13 +192,13 @@
       -o-transition: 500ms;
       transition: 500ms;
       display: block;
+      padding: 0 17px;
       img {
         width: 215px;
         margin-top: 12px;
       }
       li {
-        width: calc(100vw - 34px);
-        margin-left: 17px;
+        width: 100%;
         background-image: linear-gradient(to right, $black 50%, transparent 50%);
         background-position: left bottom;
         background-repeat: repeat-x;
@@ -218,6 +218,7 @@
     }
     input:checked~#menu {
       right: 0;
+      left: 0;
     }
   }
 }

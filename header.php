@@ -28,7 +28,7 @@
     <div class="header-contact">
       <div><span class="f-10">炉端と水炊き　道津</span></div>
       <div><span class="f-18">ご予約・お問い合わせ</span></div>
-      <div><a href="tel: 0924081292"><span class="f-22">TEL. </span><span class="f-35">092-408-1292</span></a></div>
+      <div><a href="tel: 0924081292"><span class="f-22">TEL.</span><span class="f-35">092-408-1292</span></a></div>
     </div>
   </header>
   <header class="header _pc01 header-black" id="header-black">
