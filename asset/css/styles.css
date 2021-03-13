@@ -43,6 +43,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
 }
@@ -2330,12 +2334,35 @@ a {
 .header-white .header-contact div {
   margin-top: -3px;
 }
+.header-white #header-white-item01 {
+  content: url(../img/common/nav_01_w.png);
+  width: 82px;
+}
+.header-white #header-white-item02 {
+  content: url(../img/common/nav_02_w.png);
+  width: 128px;
+}
+.header-white #header-white-item03 {
+  content: url(../img/common/nav_03_w.png);
+  width: 129px;
+}
+.header-white #header-white-item01:hover {
+  content: url(../img/common/nav_01_on_w.png);
+}
+.header-white #header-white-item02:hover {
+  content: url(../img/common/nav_02_on_w.png);
+}
+.header-white #header-white-item03:hover {
+  content: url(../img/common/nav_03_on_w.png);
+}
 
 .header-black {
   height: 64px;
   padding-top: 6px;
   color: #000;
   background-color: rgba(255, 255, 255, 0.8);
+  opacity: 0;
+  transition: 500ms;
   position: fixed;
   top: 0;
   width: 100%;
@@ -2346,6 +2373,27 @@ a {
 .header-black .header-logo,
 .header-black .header-contact {
   padding: 0 20px;
+}
+.header-black #header-black-item01 {
+  content: url(../img/common/menu_nav_01_b.png);
+  width: 82px;
+}
+.header-black #header-black-item02 {
+  content: url(../img/common/menu_nav_02_b.png);
+  width: 128px;
+}
+.header-black #header-black-item03 {
+  content: url(../img/common/menu_nav_03_b.png);
+  width: 129px;
+}
+.header-black #header-black-item01:hover {
+  content: url(../img/common/menu_nav_01_on_b.png);
+}
+.header-black #header-black-item02:hover {
+  content: url(../img/common/menu_nav_02_on_b.png);
+}
+.header-black #header-black-item03:hover {
+  content: url(../img/common/menu_nav_03_on_b.png);
 }
 
 .header-sp .header-logo-sp {
@@ -2631,6 +2679,38 @@ a {
     padding: 30px 0 50px;
     font-size: 12px;
   }
+}
+
+#toMenu {
+  position: fixed;
+  z-index: 500;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: 500ms;
+}
+#toMenu:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+#toTop {
+  position: fixed;
+  width: 100px;
+  bottom: 15px;
+  right: 20px;
+  z-index: 500;
+  opacity: 0;
+  transition: 500ms;
+}
+#toTop:hover {
+  opacity: 0.9;
+  cursor: pointer;
 }
 
 .top img {

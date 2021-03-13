@@ -17,7 +17,6 @@
   width: 100%;
   color: $white;
   background-color: $transparent;
-
   .header-contact {
     padding: 16px 10px 0 29px;
     @include YuMincho(demibold);
@@ -26,6 +25,27 @@
       margin-top: -3px;
     }
   }
+  #header-white-item01 {
+    content: url(../img/common/nav_01_w.png);
+    width: 82px;
+  }
+  #header-white-item02 {
+    content: url(../img/common/nav_02_w.png);
+    width: 128px;
+  }
+  #header-white-item03 {
+    content: url(../img/common/nav_03_w.png);
+    width: 129px;
+  }
+  #header-white-item01:hover {
+    content: url(../img/common/nav_01_on_w.png);
+  }
+  #header-white-item02:hover {
+    content: url(../img/common/nav_02_on_w.png);
+  }
+  #header-white-item03:hover {
+    content: url(../img/common/nav_03_on_w.png);
+  }
 }
 
 .header-black {
@@ -33,7 +53,8 @@
   padding-top: 6px;
   color: $black;
   background-color: rgba(255, 255, 255, 0.8);
-
+  opacity: 0;
+  transition: 500ms;
   img {
     height: 62px;
   }
@@ -46,6 +67,28 @@
   position: fixed;
   top: 0;
   width: 100%;
+
+  #header-black-item01 {
+    content: url(../img/common/menu_nav_01_b.png);
+    width: 82px;
+  }
+  #header-black-item02 {
+    content: url(../img/common/menu_nav_02_b.png);
+    width: 128px;
+  }
+  #header-black-item03 {
+    content: url(../img/common/menu_nav_03_b.png);
+    width: 129px;
+  }
+  #header-black-item01:hover {
+    content: url(../img/common/menu_nav_01_on_b.png);
+  }
+  #header-black-item02:hover {
+    content: url(../img/common/menu_nav_02_on_b.png);
+  }
+  #header-black-item03:hover {
+    content: url(../img/common/menu_nav_03_on_b.png);
+  }
 }
 
 .header-sp {
